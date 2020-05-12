@@ -23,6 +23,8 @@ from bluelog.models import Admin, Post, Category, Comment, Link
 from bluelog.settings import config
 
 basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+# __file__就是当前脚本运行的路径,如果执行命令时使用绝对路径，__file__就是脚本的绝对路径。
+# 如果使用的是相对路径，__file__就是脚本的相对路径。
 
 
 def create_app(config_name=None):
