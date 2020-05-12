@@ -25,7 +25,7 @@ from bluelog.settings import config
 basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 # __file__就是当前脚本运行的路径,如果执行命令时使用绝对路径，__file__就是脚本的绝对路径。
 # 如果使用的是相对路径，__file__就是脚本的相对路径。
-
+# os.path.dirname() 返回路径所在的目录，os.path.abspath()返回绝对路径（包含根目录）
 
 def create_app(config_name=None):
     if config_name is None:
